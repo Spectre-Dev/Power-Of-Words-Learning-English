@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="words">
+		<item>SPIDERMAN</item>
+		<item>TOYS</item>
+		<item>PHONE</item>
+		<item>TABLE</item>
+		<item>ELEPHANT</item>
+		<item>HOUSE</item>
+		<item>BATMAN</item>
+		<item>TELEPHONE</item>
+		<item>KEYBOARD</item>
+		<item>ELECTRICITY</item>
+	</string-array>
+
+</resources>

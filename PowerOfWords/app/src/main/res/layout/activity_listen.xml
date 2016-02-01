@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.slukeharris.powdyslexia.SimilarWordsGame">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BackArrow"
+        android:src="@drawable/leftarrow"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:onClick="exit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Score:"
+        android:id="@+id/ScoreView"
+        android:layout_below="@+id/SubmitBTN"
+        android:layout_toRightOf="@+id/X"
+        android:layout_toEndOf="@+id/X" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/ScoreShowL"
+        android:layout_alignBottom="@+id/ScoreView"
+        android:layout_toRightOf="@+id/ScoreView"
+        android:layout_toEndOf="@+id/ScoreView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlaySound"
+        android:src="@drawable/speaker"
+        android:background="@null"
+        android:onClick="soundBtn"
+        android:layout_alignTop="@+id/BackArrow"
+        android:layout_alignRight="@+id/SubmitBTN"
+        android:layout_alignEnd="@+id/SubmitBTN"
+        android:layout_above="@+id/SubmitBTN"
+        android:layout_alignLeft="@+id/BackArrow"
+        android:layout_alignStart="@+id/BackArrow" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/SubmitBTN"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="Submit" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/X"
+        android:visibility="gone"
+        android:src="@drawable/x"
+        android:layout_above="@+id/SubmitBTN"
+        android:layout_alignRight="@+id/SubmitBTN"
+        android:layout_alignEnd="@+id/SubmitBTN"
+        android:layout_alignLeft="@+id/BackArrow"
+        android:layout_alignStart="@+id/BackArrow"
+        android:layout_alignTop="@+id/BackArrow" />
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:id="@+id/check"
+        android:visibility="gone"
+        android:src="@drawable/check"
+        android:layout_above="@+id/SubmitBTN"
+        android:layout_alignRight="@+id/SubmitBTN"
+        android:layout_alignEnd="@+id/SubmitBTN"
+        android:layout_alignLeft="@+id/PlaySound"
+        android:layout_alignStart="@+id/PlaySound"
+        android:layout_alignTop="@+id/BackArrow" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserTXT"
+        android:layout_alignTop="@+id/SubmitBTN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffd5ddff"
+        android:layout_above="@+id/ScoreView"
+        android:layout_toLeftOf="@+id/SubmitBTN"
+        android:layout_toStartOf="@+id/SubmitBTN" />
+
+
+</RelativeLayout>
+

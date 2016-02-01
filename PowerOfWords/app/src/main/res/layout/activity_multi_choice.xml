@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.slukeharris.powdyslexia.SimilarWordsGame">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BackArrow"
+        android:src="@drawable/leftarrow"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:onClick="exit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Score:"
+        android:id="@+id/ScoreView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/BackArrow"
+        android:layout_alignStart="@+id/BackArrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/ScoreShowL"
+        android:layout_alignBottom="@+id/ScoreView"
+        android:layout_toRightOf="@+id/ScoreView"
+        android:layout_toEndOf="@+id/ScoreView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/X"
+
+        android:visibility="invisible"
+        android:src="@drawable/x"
+        android:layout_alignBottom="@+id/check"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check"
+        android:visibility="invisible"
+        android:src="@drawable/check"
+        android:layout_alignLeft="@+id/BackArrow"
+        android:layout_alignStart="@+id/BackArrow"
+        android:layout_above="@+id/ScoreView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listen"
+        android:id="@+id/button4"
+        android:textSize="@dimen/abc_dropdownitem_icon_width"
+        android:onClick="Button4"
+        android:background="@null"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/check"
+        android:layout_alignEnd="@+id/check" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Lisitn"
+        android:id="@+id/button"
+        android:textSize="@dimen/abc_dropdownitem_icon_width"
+        android:onClick="Button1"
+        android:background="@null"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_alignRight="@+id/check"
+        android:layout_alignEnd="@+id/check" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="listin"
+        android:id="@+id/button2"
+        android:textSize="@dimen/abc_dropdownitem_icon_width"
+        android:onClick="Button2"
+        android:background="@null"
+        android:layout_above="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lestin"
+        android:id="@+id/button3"
+        android:textSize="@dimen/abc_dropdownitem_icon_width"
+        android:onClick="Button3"
+        android:background="@null"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/check"
+        android:layout_alignEnd="@+id/check"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

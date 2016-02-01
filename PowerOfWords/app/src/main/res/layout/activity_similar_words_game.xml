@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.slukeharris.powdyslexia.SimilarWordsGame">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BackArrow"
+        android:src="@drawable/leftarrow"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:onClick="exit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:id="@+id/tv1"
+        android:layout_weight="0.43"
+        android:background="#760c3965"
+        android:clickable="true"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="2"
+        android:text="Hello World"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Score:"
+        android:id="@+id/ScoreView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/BackArrow"
+        android:layout_alignStart="@+id/BackArrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/ScoreShowS"
+        android:layout_alignBottom="@+id/ScoreView"
+        android:layout_toRightOf="@+id/ScoreView"
+        android:layout_toEndOf="@+id/ScoreView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/X"
+        android:layout_marginRight="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_toEndOf="@+id/ScoreShowS"
+        android:layout_alignBottom="@+id/tv1"
+        android:layout_toRightOf="@+id/ScoreShowS"
+        android:visibility="invisible"
+        android:src="@drawable/x" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check"
+        android:layout_marginRight="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_toEndOf="@+id/ScoreShowS"
+        android:layout_alignBottom="@+id/tv1"
+        android:layout_toRightOf="@+id/ScoreShowS"
+        android:visibility="invisible"
+        android:src="@drawable/check" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THERE"
+        android:id="@+id/Btn1"
+        android:onClick="Btn1OnClick"
+        android:layout_below="@+id/Btn2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ff5158ff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THEIR"
+        android:id="@+id/Btn2"
+        android:layout_marginTop="5dp"
+        android:nestedScrollingEnabled="false"
+        android:onClick="Btn2OnClick"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ff5158ff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THEY&apos;RE"
+        android:id="@+id/Btn3"
+        android:onClick="Btn3OnClick"
+        android:visibility="visible"
+        android:layout_below="@+id/Btn1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:background="#ff5158ff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:id="@+id/err"
+        android:layout_alignBottom="@+id/ScoreShowS"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="Err" />
+
+</RelativeLayout>

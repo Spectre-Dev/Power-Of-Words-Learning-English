@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ianc.powerofwords" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LevelActivity"
+            android:label="@string/title_activity_level" >
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name=".ListenAndLearnActivity"
+            android:label="@string/title_activity_listen_and_learn" >
+        </activity>
+        <activity
+            android:name=".KidsActivity"
+            android:label="@string/title_activity_kids" >
+        </activity>
+        <activity
+            android:name=".PhonicsActivity"
+            android:label="@string/title_activity_phonics" >
+        </activity>
+        <activity
+            android:name=".AbcActivity"
+            android:label="@string/title_activity_abc" >
+        </activity>
+        <activity
+            android:name=".KActivity"
+            android:label="@string/title_activity_k" >
+        </activity>
+        <activity
+            android:name=".GActivity"
+            android:label="@string/title_activity_g" >
+        </activity>
+        <activity
+            android:name=".PActivity"
+            android:label="@string/title_activity_p" >
+        </activity>
+        <activity
+            android:name=".ColoursGame"
+            android:label="@string/title_activity_advanced" >
+        </activity>
+        <activity
+            android:name=".ColorActivity"
+            android:label="@string/title_activity_color" >
+        </activity>
+        <activity
+            android:name=".LandingPage"
+            android:label="@string/title_activity_landing_page" >
+        </activity>
+        <activity
+            android:name=".NumberActivity"
+            android:label="@string/title_activity_number" >
+        </activity>
+        <activity
+            android:name=".NumberGame"
+            android:label="@string/title_activity_number_game" >
+        </activity>
+        <activity
+            android:name=".LetterGuess"
+            android:label="@string/title_activity_letter_guess" >
+        </activity>
+        <activity
+            android:name=".badgeActivity"
+            android:label="@string/title_activity_badge" >
+        </activity>
+        <activity
+            android:name=".HangmanActivity"
+            android:label="@string/title_activity_hangman" >
+        </activity>
+        <activity
+            android:name=".WordMatchActivity"
+            android:label="@string/title_activity_word_match" >
+        </activity>
+        <activity
+            android:name=".ScoreOptionsActivity"
+            android:label="@string/title_activity_score_options" >
+        </activity>
+        <activity
+            android:name=".AbcSoundActivity"
+            android:label="@string/title_activity_abc_sound" >
+        </activity>
+        <activity
+            android:name=".Listen"
+            android:label="@string/title_activity_listen" >
+        </activity>
+        <activity
+            android:name=".MainWindowDyslexia"
+            android:label="@string/title_activity_main_window_dyslexia" >
+        </activity>
+        <activity
+            android:name=".MultiChoice"
+            android:label="@string/title_activity_multi_choice" >
+        </activity>
+        <activity
+            android:name=".SimilarWordsGame"
+            android:label="@string/title_activity_similar_words_game" >
+        </activity>
+        <activity
+            android:name=".BeginnerActivity"
+            android:label="@string/title_activity_beginner" >
+        </activity>
+        <activity
+            android:name=".ReadAndListen"
+            android:label="@string/title_activity_read_and_listen" >
+        </activity>
+        <activity
+            android:name=".AlphabetDEZ"
+            android:label="@string/title_activity_alphabet_dez" >
+        </activity>
+        <activity
+            android:name=".WeekDays"
+            android:label="@string/title_activity_week_days" >
+        </activity>
+    </application>
+
+</manifest>

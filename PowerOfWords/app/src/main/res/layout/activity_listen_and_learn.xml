@@ -1,0 +1,212 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/saveScoreBtn"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:onClick="save"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonstyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Score:"
+            android:id="@+id/scoreTV"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@+id/saveScoreBtn"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/totalScoreTV"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/scoreTV"
+            android:padding="10dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="0dp">
+
+        <ImageButton
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/doctor"
+            android:onClick="playSound"
+            android:id="@+id/imageBtn" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextAnswer"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:hint="Enter the word you have listened to"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/enterBtn10"
+                android:onClick="enterQuestionTen"
+                android:background="@drawable/buttonstyle"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/enterBtn9"
+                android:onClick="enterQuestionNine"
+                android:background="@drawable/buttonstyle"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/enterBtn8"
+                android:onClick="enterQuestionEight"
+                android:background="@drawable/buttonstyle"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/enterBtn7"
+                android:onClick="enterQuestionSeven"
+                android:background="@drawable/buttonstyle"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/enterBtn6"
+                android:onClick="enterQuestionSix"
+                android:background="@drawable/buttonstyle"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/enterBtn5"
+                android:onClick="enterQuestionFive"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonstyle" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/enterBtn4"
+                android:onClick="enterQuestionFour"
+                android:background="@drawable/buttonstyle"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/enterBtn3"
+                android:onClick="enterQuestionThree"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonstyle" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/enterBtn2"
+                android:onClick="enterQuestionTwo"
+                android:background="@drawable/buttonstyle"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/enterBtn"
+                android:onClick="enter"
+                android:background="@drawable/buttonstyle"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quit"
+                android:id="@+id/quitBtn"
+                android:onClick="quit"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/enterBtn"
+                android:background="@drawable/buttonstyle"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:id="@+id/nextBtnLayout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tweetImage"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="open"
+                android:src="@drawable/tweet"
+                android:layout_marginRight="5dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

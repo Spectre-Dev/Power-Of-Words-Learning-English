@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/titleImage"
+        android:src="@drawable/titlebar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gnomeButton"
+        android:src="@drawable/speak"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Gnome - a little person who lives in the woods"
+        android:id="@+id/textView11"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignBottom="@+id/gnomeButton"
+        android:layout_alignTop="@+id/gnomeButton"
+        android:layout_toRightOf="@+id/gnomeButton"
+        android:layout_toEndOf="@+id/gnomeButton"
+        android:layout_marginLeft="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gnatButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/gnomeButton"
+        android:layout_alignLeft="@+id/gnomeButton"
+        android:layout_alignStart="@+id/gnomeButton"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gnuButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/gnatButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/gnuButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/designButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/signButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Gnat - a small biting insect"
+        android:id="@+id/textView12"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/gnatButton"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Gnu - is an african antelope"
+        android:id="@+id/textView13"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/gnuButton"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sign - gives directions"
+        android:id="@+id/textView14"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/gnuButton"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Design - defines the structure of something"
+        android:id="@+id/textView15"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/designButton"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/resignButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/designButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/alignButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/resignButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/assignButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/alignButton"
+        android:layout_toLeftOf="@+id/textView11"
+        android:layout_alignLeft="@+id/alignButton"
+        android:layout_alignStart="@+id/alignButton"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/reignButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/assignButton"
+        android:layout_alignRight="@+id/assignButton"
+        android:layout_alignEnd="@+id/assignButton"
+        android:layout_alignLeft="@+id/assignButton"
+        android:layout_alignStart="@+id/assignButton"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/foreignButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/reignButton"
+        android:layout_alignLeft="@+id/reignButton"
+        android:layout_alignStart="@+id/reignButton"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignRight="@+id/reignButton"
+        android:layout_alignEnd="@+id/reignButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Resign - to leave or to quit something"
+        android:id="@+id/textView16"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/resignButton"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Align - means to match up alongside something"
+        android:id="@+id/textView17"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/alignButton"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Assign - to give people roles in a project"
+        android:id="@+id/textView18"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/assignButton"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Reign - the length of time a king rules"
+        android:id="@+id/textView19"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/reignButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Foreign - something is not native to it&apos;s current location"
+        android:id="@+id/textView20"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/foreignButton"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19" />
+
+        </RelativeLayout>
+</RelativeLayout>
+

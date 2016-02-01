@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLayout"
+    android:stretchColumns="0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView android:text="Name:"
+        android:layout_x="30dp"
+        android:layout_y="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#003366"
+        android:id="@+id/name" />
+
+    <EditText android:id="@+id/editUserName"
+        android:inputType="text"
+        android:layout_x="150dp"
+        android:layout_y="50dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"/>
+
+    <TextView android:text="Score:"
+        android:layout_x="30dp"
+        android:layout_y="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#003366"
+        android:id="@+id/score" />
+
+    <EditText
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        android:id="@+id/editScore"
+        android:inputType="number"
+        android:layout_x="150dp"
+        android:layout_y="100dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"/>
+
+    <Button	  android:id="@+id/btnAdd"
+        android:text="Add"
+        android:layout_x="67dp"
+        android:layout_y="218dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonstyle"
+        android:textColor="#ffffffff" />
+
+    <Button	  android:id="@+id/btnDelete"
+        android:text="Delete"
+        android:layout_x="183dp"
+        android:layout_y="218dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#ffffffff"
+        android:background="@drawable/buttonstyle" />
+
+    <Button   android:id="@+id/btnModify"
+        android:text="Update"
+        android:layout_x="67dp"
+        android:layout_y="269dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#ffffffff"
+        android:background="@drawable/buttonstyle" />
+
+    <Button   android:id="@+id/btnViewAll"
+        android:text="View"
+        android:layout_x="183dp"
+        android:layout_y="269dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#ffffffff"
+        android:background="@drawable/buttonstyle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Save Score"
+        android:id="@+id/textView"
+        android:layout_x="117dp"
+        android:layout_y="14dp"
+        android:textColor="#003366" />
+
+</AbsoluteLayout>

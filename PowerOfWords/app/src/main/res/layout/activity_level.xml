@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/titleImage"
+        android:src="@drawable/titlebar1"/>
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/userImageView"
+        android:src="@drawable/nouser"
+        android:onClick="startProfileImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/titleImage"
+        android:layout_alignParentRight="true"
+        android:padding="5dp" />
+
+    <TextView android:text="User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameTextView"
+        android:textColor="#ffe1ffdf"
+        android:textSize="20dp"
+        android:padding="20dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/userImageView"
+        android:id="@+id/linearLayout"
+        android:background="#07caba">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/childButton"
+            android:layout_below="@+id/imageView"
+            android:src="@drawable/child1"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/dyslexicButton"
+            android:src="@drawable/dyslexic1"
+            android:onClick="openDyslexic"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/childButton"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/beginnerButton"
+            android:src="@drawable/beginner1"
+            android:scaleType="fitXY"
+            android:onClick="beginnerButton"
+            android:layout_below="@+id/dyslexicButton"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/advancedButton"
+            android:src="@drawable/advanced1"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/beginnerButton"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/phonicsButton"
+            android:src="@drawable/phonics1"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/advancedButton"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

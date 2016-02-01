@@ -1,0 +1,323 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ianc.powerofwords.AbcSoundActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/titleImage"
+        android:src="@drawable/titlebar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp">
+        <!--Table layout is designed to contain the letter pictures neatly together-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:transitionGroup="false"
+            android:touchscreenBlocksFocus="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true">
+            <TableRow android:layout_gravity="left">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/asoundButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/a"
+                    android:layout_marginLeft="60dp" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bsoundButton"
+                    android:src="@drawable/b"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/asoundButton"
+                    android:layout_toEndOf="@+id/asoundButton"
+                    android:layout_marginLeft="0dp" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/csoundButton"
+                    android:src="@drawable/c"
+                    android:layout_alignBottom="@+id/bButton"
+                    android:layout_toRightOf="@+id/bButton"
+                    android:layout_toEndOf="@+id/bButton"
+                    android:layout_marginLeft="0dp" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/dsoundButton"
+                    android:src="@drawable/d"
+                    android:layout_alignBottom="@+id/cButton"
+                    android:layout_toRightOf="@+id/cButton"
+                    android:layout_toEndOf="@+id/cButton"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp"
+                android:layout_gravity="left">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/esoundButton"
+                    android:src="@drawable/e"
+                    android:layout_below="@+id/asoundButton"
+                    android:layout_toLeftOf="@+id/bButton"
+                    android:layout_toStartOf="@+id/bButton"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="60dp" />
+
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/fsoundButton"
+                    android:src="@drawable/f"
+                    android:layout_above="@+id/iButton"
+                    android:layout_alignLeft="@+id/bButton"
+                    android:layout_alignStart="@+id/bButton"
+                    android:layout_marginTop="0dp" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/gsoundButton"
+                    android:src="@drawable/g"
+                    android:layout_alignBottom="@+id/fButton"
+                    android:layout_alignLeft="@+id/cButton"
+                    android:layout_alignStart="@+id/cButton"
+                    android:layout_marginTop="0dp" />
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/hsoundButton"
+                    android:src="@drawable/h"
+                    android:layout_alignTop="@+id/gButton"
+                    android:layout_alignLeft="@+id/dButton"
+                    android:layout_alignStart="@+id/dButton"
+                    android:layout_marginRight="0dp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp"
+                android:layout_gravity="left">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/isoundButton"
+                    android:src="@drawable/i"
+                    android:layout_below="@+id/eButton"
+                    android:layout_alignLeft="@+id/eButton"
+                    android:layout_alignStart="@+id/eButton"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="60dp" />
+
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/jsoundButton"
+                    android:src="@drawable/j"
+                    android:layout_alignBottom="@+id/iButton"
+                    android:layout_alignLeft="@+id/fButton"
+                    android:layout_alignStart="@+id/fButton" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/ksoundButton"
+                    android:src="@drawable/k"
+                    android:layout_alignBottom="@+id/jButton"
+                    android:layout_alignLeft="@+id/gButton"
+                    android:layout_alignStart="@+id/gButton" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/lsoundButton"
+                    android:src="@drawable/l"
+                    android:layout_above="@+id/mButton"
+                    android:layout_alignLeft="@+id/hButton"
+                    android:layout_alignStart="@+id/hButton"
+                    android:layout_marginRight="0dp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp"
+                android:layout_gravity="left">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/msoundButton"
+                    android:src="@drawable/m"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/iButton"
+                    android:layout_alignLeft="@+id/iButton"
+                    android:layout_alignStart="@+id/iButton"
+                    android:layout_marginLeft="60dp" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/nsoundButton"
+                    android:src="@drawable/n"
+                    android:layout_alignTop="@+id/mButton"
+                    android:layout_alignLeft="@+id/jButton"
+                    android:layout_alignStart="@+id/jButton" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/osoundButton"
+                    android:src="@drawable/o"
+                    android:layout_alignTop="@+id/nButton"
+                    android:layout_alignLeft="@+id/kButton"
+                    android:layout_alignStart="@+id/kButton" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/psoundButton"
+                    android:src="@drawable/p"
+                    android:layout_alignBottom="@+id/oButton"
+                    android:layout_alignLeft="@+id/lButton"
+                    android:layout_alignStart="@+id/lButton"
+                    android:layout_marginRight="0dp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp"
+                android:layout_gravity="left">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/qsoundButton"
+                    android:src="@drawable/q"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/mButton"
+                    android:layout_alignLeft="@+id/mButton"
+                    android:layout_alignStart="@+id/mButton"
+                    android:layout_marginLeft="60dp" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/rsoundButton"
+                    android:src="@drawable/r"
+                    android:layout_alignTop="@+id/qButton"
+                    android:layout_alignLeft="@+id/nButton"
+                    android:layout_alignStart="@+id/nButton" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/ssoundButton"
+                    android:src="@drawable/s"
+                    android:layout_alignBottom="@+id/rButton"
+                    android:layout_alignLeft="@+id/oButton"
+                    android:layout_alignStart="@+id/oButton" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/tsoundButton"
+                    android:src="@drawable/t"
+                    android:layout_alignBottom="@+id/sButton"
+                    android:layout_alignLeft="@+id/pButton"
+                    android:layout_alignStart="@+id/pButton"
+                    android:layout_marginRight="0dp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp"
+                android:layout_gravity="left">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/usoundButton"
+                    android:src="@drawable/u"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/qButton"
+                    android:layout_toLeftOf="@+id/bButton"
+                    android:layout_toStartOf="@+id/bButton"
+                    android:layout_marginLeft="60dp" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/vsoundButton"
+                    android:src="@drawable/v"
+                    android:layout_alignBottom="@+id/uButton"
+                    android:layout_alignLeft="@+id/rButton"
+                    android:layout_alignStart="@+id/rButton" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/wsoundButton"
+                    android:src="@drawable/w"
+                    android:layout_alignBottom="@+id/vButton"
+                    android:layout_alignLeft="@+id/sButton"
+                    android:layout_alignStart="@+id/sButton" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/xsoundButton"
+                    android:src="@drawable/x"
+                    android:layout_alignTop="@+id/wButton"
+                    android:layout_alignLeft="@+id/tButton"
+                    android:layout_alignStart="@+id/tButton"
+                    android:layout_marginRight="0dp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="left">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/ysoundButton"
+                    android:src="@drawable/y"
+                    android:layout_below="@+id/vButton"
+                    android:layout_alignLeft="@+id/vButton"
+                    android:layout_alignStart="@+id/vButton"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="60dp" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/zsoundButton"
+                    android:src="@drawable/z"
+                    android:layout_alignBottom="@+id/yButton"
+                    android:layout_alignLeft="@+id/wButton"
+                    android:layout_alignStart="@+id/wButton"
+                    android:layout_marginBottom="0dp" />
+
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

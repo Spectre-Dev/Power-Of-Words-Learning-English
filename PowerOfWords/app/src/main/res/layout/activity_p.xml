@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/titleImage"
+        android:src="@drawable/titlebar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pneumaticButton"
+        android:src="@drawable/speak"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pneumatic - containing or operated by air or gas"
+        android:id="@+id/textView21"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/pneumaticButton"
+        android:layout_toRightOf="@+id/pneumaticButton"
+        android:layout_toEndOf="@+id/pneumaticButton"
+        android:layout_marginLeft="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pneumoniaButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/pneumaticButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pneumonia - lung inflammation caused by bacterial infection"
+        android:id="@+id/textView22"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/pneumoniaButton"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/psychiatristButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/pneumoniaButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/psychicButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/psychiatristButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/psychedelicButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/psychicButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/psychologistButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/psychedelicButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/psychologyButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/psychologistButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/psychopathButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/psychologyButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/psychosisButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/psychopathButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/psychotherapyButton"
+        android:src="@drawable/speak"
+        android:layout_below="@+id/psychosisButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Psychiatrist - a medical practitioner who specialises in mental illness"
+        android:id="@+id/textView23"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/psychiatristButton"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Psychic - somebody who can see into the future"
+        android:id="@+id/textView24"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/psychicButton"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Psychedelic - a substance which causes hallucination"
+        android:id="@+id/textView25"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/psychedelicButton"
+        android:layout_toRightOf="@+id/psychedelicButton"
+        android:layout_toEndOf="@+id/psychedelicButton"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Psycholigist - a specialist in psychology"
+        android:id="@+id/textView26"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/psychologistButton"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Psychology - the scientific study of the human mind and its functions"
+        android:id="@+id/textView27"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/psychologyButton"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Psychopath - an unstable and aggresive person"
+        android:id="@+id/textView28"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/psychopathButton"
+        android:layout_alignLeft="@+id/textView27"
+        android:layout_alignStart="@+id/textView27" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Psychosis - a person who is not in touch with reality"
+        android:id="@+id/textView29"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/psychosisButton"
+        android:layout_alignLeft="@+id/textView28"
+        android:layout_alignStart="@+id/textView28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Psychotherapy - the treatment of mental illness through psychological rather then medical means"
+        android:id="@+id/textView30"
+        android:autoText="false"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/psychotherapyButton"
+        android:layout_alignLeft="@+id/textView29"
+        android:layout_alignStart="@+id/textView29" />
+
+    </RelativeLayout>
+</RelativeLayout>
+

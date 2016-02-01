@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">POW-Words</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_level">LevelActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_listen_and_learn">ListenAndLearnActivity</string>
+    <string name="title_activity_kids">KidsActivity</string>
+    <string name="title_activity_phonics">PhonicsActivity</string>
+    <string name="title_activity_abc">AbcActivity</string>
+    <string name="title_activity_k">KActivity</string>
+    <string name="title_activity_g">GActivity</string>
+    <string name="title_activity_p">PActivity</string>
+    <string name="title_activity_advanced">AdvancedActivity</string>
+    <string name="Lets_Play_Activity">Tap below for a hint!</string>
+    <string name="submitButton">Submit</string>
+    <string name="title_activity_color">ColorActivity</string>
+    <string name="headerImage">headerImage</string>
+    <string name="scoreLbl">Score:</string>
+    <string name="title_activity_landing_page">LandingPage</string>
+    <string name="title_activity_number">NumberActivity</string>
+    <string name="title_activity_number_game">NumberGame</string>
+    <string name="title_activity_letter_guess">LetterGuess</string>
+    <string name="title_activity_badge">badgeActivity</string>
+    <string name="title_activity_hangman">HangmanActivity</string>
+    <string name="title_activity_word_match">WordMatchActivity</string>
+    <string name="gallows">The Gallows</string>
+    <string name="head">The Head</string>
+    <string name="body">The Body</string>
+    <string name="arm">An Arm</string>
+    <string name="leg">A Leg</string>
+    <string name="title_activity_score_options">ScoreOptionsActivity</string>
+    <string name="title_activity_abc_sound">AbcSoundActivity</string>
+    <string name="title_activity_listen">Listen</string>
+    <string name="title_activity_main_window_dyslexia">MainWindowDyslexia</string>
+    <string name="title_activity_multi_choice">MultiChoice</string>
+    <string name="title_activity_similar_words_game">SimilarWordsGame</string>
+    <string name="title_activity_beginner">BeginnerActivity</string>
+    <string name="title_activity_read_and_listen">ReadAndListen</string>
+    <string name="title_activity_alphabet_dez">AlphabetDEZ</string>
+    <string name="title_activity_week_days">WeekDays</string>
+
+</resources>

@@ -1,0 +1,85 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ianc.powerofwords.WeekDays">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:id="@+id/mondayBtn"
+            android:onClick="mondayBtn"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffb10e" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+            android:id="@+id/tuesdayBtn"
+            android:onClick="tuesdayBtn"
+            android:layout_below="@+id/mondayBtn"
+            android:layout_centerHorizontal="true"
+            android:background="#ff43ff48" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Wednesday"
+            android:id="@+id/wednesdayBtn"
+            android:onClick="wednesdayBtn"
+            android:layout_below="@+id/tuesdayBtn"
+            android:layout_centerHorizontal="true"
+            android:background="#ffba31ff" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Thursday"
+            android:id="@+id/thursdayBtn"
+            android:onClick="thursdayBtn"
+            android:layout_below="@+id/wednesdayBtn"
+            android:layout_centerHorizontal="true"
+            android:background="#ffff1e17" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Friday"
+            android:id="@+id/fridayBtn"
+            android:onClick="fridayBtn"
+            android:layout_below="@+id/thursdayBtn"
+            android:layout_centerHorizontal="true"
+            android:background="#fffbff20" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Saturday"
+            android:id="@+id/saturdayBtn"
+            android:onClick="saturdayBtn"
+            android:layout_below="@+id/fridayBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffff5fcd" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sunday"
+            android:id="@+id/sundayBtn"
+            android:onClick="sundayBtn"
+            android:layout_below="@+id/saturdayBtn"
+            android:layout_centerHorizontal="true"
+            android:background="#ff1b44ff" />
+    </RelativeLayout>
+</GridLayout>
